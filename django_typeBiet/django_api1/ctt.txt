@@ -1,0 +1,14 @@
+expose port to :
+                                                      (mysite::dir as src::dir)
+
+#to build docker image for working with scrapy container
+docker build -t "Image_name": "tag" . "dockerFile_locate"
+
+to run erro port :
+docker run --rm -it -v $(pwd):/user -d -p 321:8000 api_tutor1:0 bash -c "cd src && python manage.py runserver 0.0.0.0:8000" 
+
+to run server instanioustly mild:
+docker run --rm -v $(pwd):/user -p 321:8000 --name c1 api_tutor1:0 bash -c "cd src && python manage.py runserver 0.0.0.0:8000"
+
+to run interactive
+docker run -it --rm -v $(pwd):/user -p 321:8000 --name c1 api_tutor1:0 bash

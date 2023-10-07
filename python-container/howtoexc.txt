@@ -1,0 +1,18 @@
+# Step1
+# build custom image
+docker build \
+    -t "images-name(UI)" \
+    .
+
+#Step2
+# run file
+docker run \
+    --rm \
+    -v $(pwd):/src "images-name(UI)" \
+    python /src/"pythonfile"
+
+#kind a work
+docker run -v $(pwd):$(pwd) python-bare sh -c "python $(pwd)/aven.py ."
+
+#run container interactive den need copy file created
+cp -rf Sales_* /home/surename/Documents/docker/python-container
