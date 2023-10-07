@@ -1,0 +1,5 @@
+
+namaItm = //div[@data-testid='spnSRPProdName']
+	//div[@class='css-1f4mp12']
+
+harga = //div[@data-testid='spnSRPProdPrice']

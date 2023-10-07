@@ -1,0 +1,50 @@
+docer
+3030302221
+tnade@ottappmail.com
+JGJEU#&&**43JFjigun9
+
+#docker trikcs
+
+#to see docker image created list 
+docker images REPOSITORY NAME
+
+#comand, after creating to delete image created
+docker rmi -f IMAGE-ID
+docker rmi -f $(docker image ls -aq)
+
+#list all ps 
+docker ps -aq
+
+#Delete all containers using the following command: 
+docker container rm -f 'container_ID'
+docker container rm -f $(docker container ls -aq)
+
+#docker list container
+docker container ls 
+"special only container-id"
+docker container ls -aq
+
+#docker list images
+docker images ls 
+"special only iamge-id"
+docker images ls -aq
+
+#docker service list
+docker service ls -a
+
+#TO STOP DOCKER SERVICE's 
+docker stop 'NAMES-FROM-docker-ps ' 
+
+#spot volume name yet 
+docker volume ls -q
+
+#deleted volume to after created
+docker volume rm 'volume_name'
+
+#Restart the containers using the following command: 
+docker-compose up -d
+
+#to disable this behavior, use disable instead.
+sudo systemctl disable docker.service
+
+sudo systemctl disable containerd.service

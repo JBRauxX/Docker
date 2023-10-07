@@ -1,0 +1,9 @@
+items => basically use it to clean the data we scrape and to sort off store the data
+
+middleware => which has basically everything to do with the request and response objects as two types of mirrors one is the spider middleware that is a responsible for returning
+downloader middleware which is responsible for downloading the HTML markup of a website so here in this file
+middleware which will rotate the user agent selection each time a request is sent all right
+
+pipelines => is used to store the items you scrape in a database
+
+settings => used to tweak or add some extra configuration to your project

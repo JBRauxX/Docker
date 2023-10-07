@@ -1,0 +1,31 @@
+How to scrapt in docker
+
+* Creating spider
+[1] build up cotainer with all of these config
+[2] then build project inside jupyter, because of only that can be accesed by user not the surename
+      cmd : scrapy startproject "project_name"
+
+[3] cd to "project file" created by scrapy 
+
+[4] generate spider from notebook, make sure these comand on the notebook cell
+      cmd: !cd BLapa* && scrapy genspider "SpiderName" "linkpage2scrapt"
+as reference in first.ipynb file
+
+* how to  Crawling page
+[1] use regural terminal 
+[2] get in scrapy ipython
+      cmd: scrapy shell "link or without it" 
+
+# crawled&check the page
+[3] fetching the page want to scrap "linkscrap_Page"
+      cmd: fetch("linkscrap_Page")
+tinystep: 
+        ~ constructing a request object and pass it as an argument to fetch
+            cmd: r = scrapy.Request(url="linkscrap_Page")
+        ~ then fetching
+            cmd: fetch(r) 
+        ~ to output html scrap page
+            cmd: response.body
+        ~ to view response
+            cmd: view(response)
+

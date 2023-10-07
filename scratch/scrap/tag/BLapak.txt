@@ -1,0 +1,4 @@
+namaItm = //div[@class='bl-product-card__description-name']
+	//a[@class='bl-link']
+
+haga = //div[@class='bl-product-card__description-price']

@@ -1,0 +1,9 @@
+docker conclusion 
+
+docker run --rm -v $(pwd):/"Doker-app-workdir" "images-name" sh -c "scrapy startproject [project_name] ."
+And
+docker run --rm -v $(pwd):/"Doker-app-workdir" "images-name" sh -c "scrapy startproject [project_name]"
+Or
+docker run --rm -v $(pwd):/home/app2 python-bare2 sh -c "scrapy startproject hogyah"
+
+are only created on local file not on container

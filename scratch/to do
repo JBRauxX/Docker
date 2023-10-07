@@ -1,0 +1,20 @@
+"""these tutorial based on Scrapy Crawl Spider - A Complete Guid | Python Scrapy Series chl
+codeRECODE with Upendra         """
+
+#and it succeded pagination or executing next page
+
+#to build docker image for working with scrapy container
+docker build -t "Image_name": "tag" . "dockerFile_locate"
+
+#to run images with local file
+docker run --rm -v $(pwd):/user python_bare:1 sh -c "---comand-here----"
+
+#to run interact with images and working on local
+docker run --rm -it -v $(pwd):/user python_bare:1 sh
+
+#for scrapy starting crawl
+scrapy genspider -t crawl "spider_name" "link_to_crawl"
+
+#to save json file 
+"""put output dash option -o"""
+scrapy runspider "script_name.py" -o "output_name.json"
